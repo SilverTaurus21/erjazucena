@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,500;0,600;0,700;1,400;1,500;1,700&family=MuseoModerno:wght@200;300;400;600;800&family=Pixelify+Sans:wght@400;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(34, 107, 167);
+}
+
+
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: black;
+    background-color:yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+
+.btn:hover{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: yellowgreen;
+    transition: all 0.3s ease;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px white;
+    z-index: -100px;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;    
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: bisque;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+header .content h1{
+    color: beige;
+    margin-bottom: 1rem;
+    font-size: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom:2rem;
+    color: bisque;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 60rem;
+    font-weight:400;
+    line-height: 20rem;
+    color:whitesmoke;
+    opacity: 0.3;
+    z-index: -100px;
+}
+
+header .image img{
+    max-width:500px;
+    margin: auto;
+    opacity:0.9;
+    border-radius:1000px;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight:600;
+}
+
+.skills{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.skills .card{
+    background-color:silver;
+    padding: 1rem;
+    border:3px solid transparent;
+    border-radius:15px;
+    transition: all 0.3s ease;
+}
+
+.skills .card:hover{
+    background-color:white;
+    border-color: aquamarine;
+}
+
+.skills .card span{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 2px 9px;     
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.skills .card h4{
+    margin-bottom: 0.5rem;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.3rem;  
+
+}
+
+
+.skills .card p{
+    color:black;
+    margin-bottom: 1rem;
+}
+
+/***** project *****/  
+
+
+
+.project{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.project .card{
+    background-color:silver;
+    padding: 1rem;
+    border:3px solid transparent;
+    border-radius:15px;
+    transition: all 0.3s ease;
+    
+}
+
+.project .card:hover{
+    background-color:white;
+    border-color: black;
+    border-width: 3px;
+    transition: all 0.3s ease;
+}
+
+.project .card span{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 1px 6px;     
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.project .card h4{
+    margin-bottom: 0.5rem;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.3rem;  
+
+}
+
+.project .card img{
+    padding:0%;
+    margin: auto;
+    border-radius: 0.9rem;
+}
+
+.project .card p{
+    margin-top: 1rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+/***** End Section *****/
+
+
+/***** RESUME *****/  
+
+.sub-header-resume{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: yellow       ;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+
+
+  table th {
+    background-color:steelblue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: white;
+  }
+  
+  table tr:hover td {
+    background-color: #ffedcc;
+  }
+
+  table td {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px soli white;
+    font-weight: bold;
+  }
+
+/***** End RESUME *****/
+
+
+/***** FOOTER *****/  
+
+footer{
+    position:  relative;
+    display: grid;
+    grid-template-columns: 400px ;
+    gap: 2rem;
+    justify-content: center;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1px;
+}
+
+footer .column{
+    color: white;
+    margin-bottom: 2rem;   
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap:  1rem;
+    justify-content: center;
+}
+
+footer p{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1px;
+    color: white;
+    font-size:  0.8rem;
+    text-align:  center;
+}
+
+footer .column .socials a{
+    color:white;
+    border: 1px solid white;
+    padding:5px 10px;
+    font-size: 1.2rem;
+    border-radius: 100%;
+ 
+}
+
+footer .column .socials a:hover{
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1px;
+    color: white;
+    font-size:  0.8rem;
+    text-align:  center;
+}
+
+/***** End Section *****/
